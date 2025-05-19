@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express';
+import { Response, NextFunction } from 'express';
 import prisma from './prismaClient';
-import { authenticateJWT, AuthRequest } from './middleware/authenticateJWT';
+import { AuthRequest } from './middleware/authenticateJWT';
 
 export const createNote = async (
   req: AuthRequest,
