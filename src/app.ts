@@ -2,10 +2,12 @@ import express, { Request, Response } from 'express';
 import userRoutes from './userRoutes';
 import noteRoutes from './noteRoutes';
 import authRoutes from './authRoutes';
+import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
