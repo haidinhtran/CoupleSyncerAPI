@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, TypeScript Web API!');
+  res.send('Couple Syncer API');
 });
 
 app.use('/api/user', userRoutes);
